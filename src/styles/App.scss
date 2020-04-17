@@ -1,0 +1,158 @@
+@import './fonts.scss';
+body .v-application {
+	.v-btn__content .subtitle-2,
+	.title,
+	.display-1,
+	.display-2,
+	.display-3 {
+		font-family: 'TT Commons' !important;
+	}
+	.subtitle-1 {
+		font-family: 'Maison' !important;
+	}
+	.display-0 {
+		font-family: 'TT Commons' !important;
+		font-size: 1rem !important;
+		font-weight: 500;
+		line-height: 1.125rem;
+		color: $darkText;
+	}
+	.display-1 {
+		font-size: 1.875rem !important;
+		font-weight: 500;
+		line-height: 2.125rem;
+	}
+	.display-2 {
+		font-size: 1.5rem !important;
+		font-weight: 500;
+		line-height: 1.75rem;
+		color: $darkText;
+		@include md-down{
+			font-size: 1.35rem !important;
+		}
+	}
+	.display-3 {
+		font-weight: 500;
+		font-size: 2.25rem !important;
+		line-height: 41px;
+		@include md-down{
+			font-size: 2rem !important;
+		}
+	}
+	a {
+		color: inherit;
+		text-decoration: none !important;
+	}
+	.v-text-field--filled .v-input__slot {
+		border-radius: 10px;
+		border: 1px solid #f5f5f5;
+	}
+	.v-text-field--rounded > .v-input__control > .v-input__slot {
+		padding: 0 20px;
+	}
+	:focus {
+		outline: none;
+	}
+	.v-input--is-focused.v-text-field--filled .v-input__slot {
+		border: 1px solid #868686;
+	}
+	.v-text-field--filled.error--text .v-input__slot {
+		border: 1px solid $error;
+	}
+	.phone.v-input--is-focused,
+	.phone {
+		.v-input__prepend-inner {
+			margin-top: 16px;
+		}
+		input {
+			margin-top: 1px;
+		}
+	}
+	.error--text .v-text-field__details {
+		padding: 0;
+		display: block;
+		.v-messages__message {
+			font-size: 16px;
+			line-height: 15px;
+		}
+	}
+	.v-btn--outlined {
+		background: transparent;
+	}
+
+	.small-text {
+		font-family: 'TT Commons';
+		font-style: normal;
+		font-weight: 500;
+		font-size: 16px;
+		line-height: 18px;
+		color: #868686;
+	}
+	.v-btn__content {
+		font-family: 'TT Commons';
+	}
+	.v-btn--rounded,
+	.v-card:not(.v-sheet--tile):not(.v-card--shaped) {
+		border-radius: 10px;
+	}
+
+	.theme--light .v-divider {
+		border-color: $background;
+	}
+	.sub-title {
+		font-family: 'TT Commons';
+		font-style: normal;
+		font-weight: 500;
+		font-size: 24px;
+		line-height: 28px;
+		color: $darkText;
+		width: 100%;
+	}
+
+	.v-btn--rounded {
+		@include gradient();
+		font-size: 1.5rem;
+		text-transform: none;
+	}
+
+	.see-all {
+		.v-btn__content,
+		i {
+			font-weight: 500;
+			font-size: 18px;
+			line-height: 20px;
+			align-items: center;
+			color: #333333;
+			text-transform: none;
+		}
+	}
+	.theme--light.v-card,
+	.v-text-field.v-text-field--solo:not(.v-text-field--solo-flat) > .v-input__control > .v-input__slot {
+		box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.02);
+		border-radius: 10px;
+	}
+	.right-switch {
+		margin: 0;
+		.v-input__slot {
+			display: flex;
+			flex-direction: row-reverse;
+			.v-label {
+				font-family: 'TT Commons';
+				font-weight: 500;
+				font-size: 20px;
+				line-height: 23px;
+				color: $darkText;
+			}
+		}
+	}
+	.btn {
+		border-radius: 0 !important;
+		background: #000000 !important;
+		color: #fff !important;
+	  }
+}
+// body .container{
+// 	@include sm-down{
+// 		padding: 0;
+// 	}
+// }
