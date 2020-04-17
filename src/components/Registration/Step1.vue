@@ -1,9 +1,9 @@
 <template>
     <v-container text-center>
-            <h3 class="mb-3 display-2">What type of site do you want?</h3>
+            <p class="textColor mb-3 display-1 animated fadeInDown">What type of site do you want?</p>
             <v-row>
                 <v-col lg="3" md="3" sm="6" xl="12" v-for="(list, i) in lists" :key="i">
-                    <v-card class="box">
+                    <v-card class="box animated fadeInLeft">
                     <div @click="handleClick(i)">
                         <div>
                         <v-icon  color="primary" class="mt-3 mb-2" size="24px">{{ list.icon }}</v-icon>
@@ -47,11 +47,17 @@ export default {
 }
 </script>
 <style scoped>
+.textColor {
+    color: var(--v-secondary-base);
+}
 .box {
     border: 1px solid #999;
     color: var(--v-primary-base);
     border-radius: 2px;
     margin: 2px;
+}
+.box:hover {
+    box-shadow: 0 6px 6px -3px rgba(0,0,0,.2),0 10px 14px 1px rgba(0,0,0,.14),0 4px 18px 3px rgba(0,0,0,.12)!important;
 }
 .box span {
     color: var(--v-primary-base);

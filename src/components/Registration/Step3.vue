@@ -1,6 +1,6 @@
 <template>
     <v-container text-center>
-        <h3 class="display-3">Let's get started!</h3>
+        <h3 class="textColor display-1 animated fadeInRight">Let's get started!</h3>
         <v-row>
             <v-col md="6" lg="6" sm="12" xs="12">
                 <v-text-field outlined label="Your Name" append-icon="mdi-account"></v-text-field>
@@ -40,6 +40,9 @@
 }
 </script>
 <style scoped>
+.textColor {
+    color: var(--v-secondary-base);
+}
 	.socialOne {
 		border: 1px solid #4264b2;
 		color: #4264b2;

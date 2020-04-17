@@ -17,6 +17,7 @@ import i18n from './i18n';
 import vuetify from './plugins/vuetify';
 import IconFonts from './components/IconFonts.vue';
 import ContentTitle from './components/widget/ContentTitle.vue';
+import VueTyperPlugin from 'vue-typer'
 
 Vue.use(mixins);
 Vue.use(numberFormatFilter);
@@ -28,6 +29,7 @@ Vue.use(downloadExcel);
 Vue.component('downloadExcel', downloadExcel);
 Vue.component('IconFonts', IconFonts);
 Vue.component('ContentTitle', ContentTitle);
+Vue.use(VueTyperPlugin)
 
 Vue.use(VueI18n);
 

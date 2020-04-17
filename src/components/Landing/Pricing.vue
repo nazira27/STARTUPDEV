@@ -1,14 +1,15 @@
 <template>
-    <v-container>
+    <v-container text-center>
+             <h3 class="display-3 my-3"><vue-typer class="textColor" text='Pricing'></vue-typer></h3>
         <v-row align="center">
             <v-col md="4" lg="4" xl="12">
-                <v-card class="card1 mx-auto" max-width="344" elevation="3">
+                <v-card class="card1 mx-auto animated fadeInLeft" max-width="344" elevation="3">
                     <div class="pt-10 pb-10 px-10">
-                        <v-list-item-title class="font-weight-black mx-auto text-center display-2">$99
+                        <v-list-item-title class="textColor font-weight-black mx-auto text-center display-2">$99
                         </v-list-item-title>
                         <v-list-item-subtitle class="text-capitalize text-center mt-5 subtitle-1">Monthly package
                         </v-list-item-subtitle>
-                        <v-list-item-subtitle class="text-uppercase text-center mt-10 display-1" color="primary">Starter
+                        <v-list-item-subtitle class="textColor text text-uppercase text-center mt-10 display-1">Starter
                         </v-list-item-subtitle>
                         <div class="text-center mt-5 mb-5">
                             <v-btn large rounded color="primary" dark>Button</v-btn>
@@ -29,13 +30,13 @@
                 </v-card>
             </v-col>
             <v-col md="4" lg="4" xl="12">
-                <v-card class="mx-auto card2" max-width="344" elevation="3">
+                <v-card class="mx-auto card2 animated fadeInDown" max-width="344" elevation="3">
                     <div class="pa-10">
-                        <v-list-item-title class="font-weight-black mx-auto text-center display-2">$99
+                        <v-list-item-title class="textColor font-weight-black mx-auto text-center display-2">$99
                         </v-list-item-title>
                         <v-list-item-subtitle class="text-capitalize text-center mt-5 subtitle-1">Monthly package
                         </v-list-item-subtitle>
-                        <v-list-item-subtitle class="text-uppercase text-center mt-10 display-1" color="primary">Starter
+                        <v-list-item-subtitle class="textColor text text-uppercase text-center mt-10 display-1">Starter
                         </v-list-item-subtitle>
                         <div class="text-center mt-5 mb-5">
                             <v-btn large rounded color="primary" dark>Button</v-btn>
@@ -56,13 +57,13 @@
                 </v-card>
             </v-col>
             <v-col md="4" lg="4" xl="12">
-                <v-card class="card3 mx-auto" max-width="344" elevation="3">
+                <v-card class="card3 mx-auto animated fadeInRight" max-width="344" elevation="3">
                      <div class="pt-10 pb-10 px-10">
-                        <v-list-item-title class="font-weight-black mx-auto text-center display-2">$99
+                        <v-list-item-title class="textColor font-weight-black mx-auto text-center display-2">$99
                         </v-list-item-title>
                         <v-list-item-subtitle class="text-center mt-5 subtitle-1">Monthly package
                         </v-list-item-subtitle>
-                        <v-list-item-subtitle class="text-uppercase text-center mt-10 display-1">Starter
+                        <v-list-item-subtitle class="textColor text text-uppercase text-center mt-10 display-1">Starter
                         </v-list-item-subtitle>
                         <div class="text-center mt-5 mb-5">
                             <v-btn large rounded color="primary" dark>Button</v-btn>
@@ -121,5 +122,8 @@ export default {
 }
 .card3:hover {
    box-shadow: 0 6px 6px -3px rgba(0,0,0,.2),0 10px 14px 1px rgba(0,0,0,.14),0 4px 18px 3px rgba(0,0,0,.12)!important; 
+}
+.textColor {
+    color: var(--v-secondary-base);
 }
 </style>

@@ -1,11 +1,11 @@
 <template>
     <v-container text-center>
-        <h3 class="display-2">Add your {{valueFromStepOne}} name</h3>
+        <h3 class="textColor display-1 animated fadeInDown">Add your {{valueFromStepOne}} name</h3>
         <v-row align="center">
             <v-col md="6" lg="6" sm="12">
                 <v-text-field outlined :label="valueOfPlcholder"></v-text-field>
                 <div @click="onClick()">
-                    <v-btn class="ma-6 mt-10 mx-auto" color="primary" large>Go to final step</v-btn>
+                    <v-btn class="animated fadeInUp ma-6 mt-10 mx-auto" color="primary" large>Go to final step</v-btn>
                 </div>
             </v-col>
             <v-col md="6" lg="6" sm="12">
@@ -46,3 +46,8 @@ console.log(this.step)
 }
 }
 </script>
+<style scoped>
+	.textColor {
+    color: var(--v-secondary-base);
+}
+</style>

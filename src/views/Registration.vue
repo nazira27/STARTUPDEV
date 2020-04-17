@@ -7,9 +7,9 @@
                 <v-stepper-header class="elevation-0">
                     <v-stepper-step editable :complete="e1 > 1" step="1"></v-stepper-step>
                     <v-divider></v-divider>
-                    <v-stepper-step editable :complete="e1 > 2" step="2"></v-stepper-step>
+                    <v-stepper-step :editable="e1>2" :complete="e1 > 2" step="2"></v-stepper-step>
                     <v-divider></v-divider>
-                    <v-stepper-step editable step="3"></v-stepper-step>
+                    <v-stepper-step step="3"></v-stepper-step>
                 </v-stepper-header>
                 <v-stepper-items>
                     <v-stepper-content step="1">

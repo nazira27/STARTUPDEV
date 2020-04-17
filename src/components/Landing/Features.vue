@@ -2,16 +2,20 @@
     <v-container pt-10>
         <v-row align="center">
             <v-col lg="4" md="4" xl="12">
-                <p class="mt-6 display-2 font-weight-bold">Let's code your template</p>
+                <p class="mt-6 display-2 font-weight-bold">
+                    <vue-typer class="textColor" text="Let's code your template"></vue-typer>
+                </p>
                 <v-btn class="btn ma-6 mt-10 mx-auto" outlined large>Check prices</v-btn>
             </v-col>
             <v-col lg="8" md="8" xl="12">
                 <v-row>
                     <v-col lg="6" md="6" xl="12" v-for="(item, i) in items" :key="i">
-                        <v-img class="image" :src="item.icon">
-                        </v-img>
-                        <h3 class="my-3">{{item.title}}</h3>
-                        <p>{{item.text}}</p>
+                        <v-card class="box pa-4">
+                            <v-img class="image" :src="item.icon">
+                            </v-img>
+                            <h3 class="mx-2 textColor my-3">{{item.title}}</h3>
+                            <p class="mx-1">{{item.text}}</p>
+                        </v-card>
                     </v-col>
                 </v-row>
             </v-col>
@@ -36,7 +40,24 @@ export default {
     },
 }
 </script>
+<style lang="scss">
+.textColor.vue-typer .custom.typed {
+    color: var(--v-secondary-base);
+}
+</style>
 <style scoped>
+.textColor {
+    color: var(--v-secondary-base);
+}
+
+.vue-typer .custom.char.typed {
+    color: var(--v-secondary-base);
+}
+
+.vue-typer .custom.char.selected {
+    color: var(--v-secondary-base);
+}
+
 .btn {
     background-color: white;
     color: #293d58;
@@ -52,5 +73,16 @@ export default {
     filter: hue-rotate(320deg) saturate(0.5);
     width: 64px;
     height: 64px;
+}
+
+.box {
+    width: 300px;
+    height: 300px;
+}
+
+.box:hover {
+    background: var(--v-primary-base);
+    transition: 1.3s cubic-bezier(0.4, 0, 0.2, 1);
+    color: white;
 }
 </style>
