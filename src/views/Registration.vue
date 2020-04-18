@@ -1,9 +1,10 @@
 <template>
     <div>
-        <Header></Header>
+        <HeaderRegis></HeaderRegis>
 	<v-container>
         <template>
-            <v-stepper v-model="e1" class="m-20 elevation-0">
+            <v-stepper v-model="e1" class="elevation-0">
+                <div class="stepper">
                 <v-stepper-header class="elevation-0">
                     <v-stepper-step editable :complete="e1 > 1" step="1"></v-stepper-step>
                     <v-divider></v-divider>
@@ -13,6 +14,7 @@
                     <v-divider></v-divider>
                     <v-stepper-step step="4"></v-stepper-step>
                 </v-stepper-header>
+                </div>
                 <v-stepper-items>
                     <v-stepper-content step="1">
                         <Step1 v-model="e1" :step="e1" :lists="lists" @onElementSelected="handleStepOne" />
@@ -27,13 +29,14 @@
                         <Integration/>
                     </v-stepper-content>
                 </v-stepper-items>
+                    
             </v-stepper>
         </template>
 </v-container>
     </div>
 </template>
 <script>
-import Header from "@/components/Landing/Header"
+import HeaderRegis from "@/components/Registration/HeaderRegis"
 import Step1 from "@/components/Registration/Step1"
 import Step2 from "@/components/Registration/Step2"
 import Step3 from "@/components/Registration/Step3"
@@ -41,7 +44,7 @@ import Integration from "@/components/Registration/Integration"
 export default {
     name: "Registration",
     components: {
-        Header,
+        HeaderRegis,
         Step1,
         Step2,
         Step3,
@@ -85,5 +88,8 @@ export default {
 <style scoped>
 .m-20 {
     margin-top: 110px;
+}
+.stepper {
+    padding: 0 170px;
 }
 </style>
