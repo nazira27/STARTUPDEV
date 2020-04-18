@@ -1,6 +1,6 @@
 <template>
     <v-footer dark padless>
-        <v-card flat tile color="primary" class="white--text text-center">
+        <v-card flat tile color="primary" class="card white--text text-center">
             <v-card-text>
                 <v-btn v-for="icon in icons" :key="icon" class="mx-4" icon>
                     <v-icon size="24px">{{ icon }}</v-icon>
@@ -32,3 +32,8 @@ export default {
     },
 }
 </script>
+<style scoped>
+    .card {
+        margin: 0 auto;
+    }
+</style>
