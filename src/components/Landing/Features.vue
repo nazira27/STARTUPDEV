@@ -1,15 +1,15 @@
 <template>
     <v-container pt-10>
         <v-row align="center">
-            <v-col lg="4" md="4" xl="12">
+            <v-col lg="4" md="4" xl="4" xs="12" sm="12">
                 <p class="mt-6 display-2 font-weight-bold">
                     <vue-typer class="textColor" text="Let's code your template"></vue-typer>
                 </p>
                 <v-btn class="btn ma-6 mt-10 mx-auto" outlined large>Check prices</v-btn>
             </v-col>
-            <v-col lg="8" md="8" xl="12">
+            <v-col lg="8" md="8" xl="8" xs="12" sm="12">
                 <v-row>
-                    <v-col lg="6" md="6" xl="12" v-for="(item, i) in items" :key="i">
+                    <v-col lg="6" md="6" xl="6" xs="12" sm="12" v-for="(item, i) in items" :key="i">
                         <v-card class="box pa-4">
                             <v-img class="image" :src="item.icon">
                             </v-img>

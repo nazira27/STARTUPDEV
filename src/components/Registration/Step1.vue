@@ -2,7 +2,7 @@
     <v-container text-center>
             <p class="textColor mb-3 display-1 animated fadeInDown">What type of site do you want?</p>
             <v-row>
-                <v-col lg="3" md="3" sm="6" xl="12" v-for="(list, i) in lists" :key="i">
+                <v-col lg="3" md="3" sm="6" xl="3" xs="12" v-for="(list, i) in lists" :key="i">
                     <v-card class="box animated fadeInLeft">
                     <div @click="handleClick(i)">
                         <div>

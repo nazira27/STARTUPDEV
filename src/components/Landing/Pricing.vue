@@ -2,7 +2,7 @@
     <v-container text-center>
              <h3 class="display-3 my-3"><vue-typer class="textColor" text='Pricing'></vue-typer></h3>
         <v-row align="center">
-            <v-col md="4" lg="4" xl="12">
+            <v-col md="4" lg="4" xl="4" xs="12" sm="12">
                 <v-card class="card1 mx-auto animated fadeInLeft" max-width="344" elevation="3">
                     <div class="pt-10 pb-10 px-10">
                         <v-list-item-title class="textColor font-weight-black mx-auto text-center display-2">$99
@@ -29,7 +29,7 @@
                     </div>
                 </v-card>
             </v-col>
-            <v-col md="4" lg="4" xl="12">
+            <v-col md="4" lg="4" xl="4" xs="12" sm="12">
                 <v-card class="mx-auto card2 animated fadeInDown" max-width="344" elevation="3">
                     <div class="pa-10">
                         <v-list-item-title class="textColor font-weight-black mx-auto text-center display-2">$99
@@ -56,7 +56,7 @@
                     </div>
                 </v-card>
             </v-col>
-            <v-col md="4" lg="4" xl="12">
+            <v-col md="4" lg="4" xl="4" xs="12" sm="12">
                 <v-card class="card3 mx-auto animated fadeInRight" max-width="344" elevation="3">
                      <div class="pt-10 pb-10 px-10">
                         <v-list-item-title class="textColor font-weight-black mx-auto text-center display-2">$99
@@ -110,10 +110,10 @@ export default {
 }
 </script>
 <style scoped>
-/*.card2 {
+.card2 {
    padding-top: 20px;
    padding-bottom: 20px;
-}*/
+}
 .card2:hover{
   box-shadow: 0 6px 6px -3px rgba(0,0,0,.2),0 10px 14px 1px rgba(0,0,0,.14),0 4px 18px 3px rgba(0,0,0,.12)!important;
 }

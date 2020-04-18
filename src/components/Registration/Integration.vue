@@ -2,10 +2,10 @@
     <v-container text-center>
         <h3 class="textColor mb-2 display-1 animated fadeInLeft"><vue-typer caret-animation='expand' class="textColor" text="Integration"></vue-typer></h3>
         <v-row align="center">
-            <v-col md="7" lg="7" sm="12">
+            <v-col md="7" lg="7" sm="12" xl="7">
                 <v-img src=@/assets/undraw_online_discussion.svg> </v-img> 
             </v-col> 
-            <v-col md="5" lg="5" sm="12">
+            <v-col md="5" lg="5" sm="12" xl="5">
                     <v-btn class="mx-3 animated fadeInDown"  color="primary" large>
                         <v-icon>mdi-facebook</v-icon>
                     </v-btn>
