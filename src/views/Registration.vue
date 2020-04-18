@@ -9,7 +9,9 @@
                     <v-divider></v-divider>
                     <v-stepper-step :editable="e1>2" :complete="e1 > 2" step="2"></v-stepper-step>
                     <v-divider></v-divider>
-                    <v-stepper-step step="3"></v-stepper-step>
+                    <v-stepper-step :editable="e1>3" :complete="e1 > 3" step="3"></v-stepper-step>
+                    <v-divider></v-divider>
+                    <v-stepper-step step="4"></v-stepper-step>
                 </v-stepper-header>
                 <v-stepper-items>
                     <v-stepper-content step="1">
@@ -19,7 +21,10 @@
                         <Step2 v-model="e1" :step="e1" :valueFromStepOne="valueFromStepOne" :valueOfPlcholder="valueOfPlcholder" />
                     </v-stepper-content>
                     <v-stepper-content step="3">
-                        <Step3 />
+                        <Step3 v-model="e1" :step="e1"/>
+                    </v-stepper-content>
+                    <v-stepper-content step="4">
+                        <Integration/>
                     </v-stepper-content>
                 </v-stepper-items>
             </v-stepper>
@@ -32,13 +37,15 @@ import Header from "@/components/Landing/Header"
 import Step1 from "@/components/Registration/Step1"
 import Step2 from "@/components/Registration/Step2"
 import Step3 from "@/components/Registration/Step3"
+import Integration from "@/components/Registration/Integration"
 export default {
     name: "Registration",
     components: {
         Header,
         Step1,
         Step2,
-        Step3
+        Step3,
+        Integration
     },
     data() {
         return {

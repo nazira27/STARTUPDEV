@@ -110,10 +110,10 @@ export default {
 }
 </script>
 <style scoped>
-.card2 {
+/*.card2 {
    padding-top: 20px;
    padding-bottom: 20px;
-}
+}*/
 .card2:hover{
   box-shadow: 0 6px 6px -3px rgba(0,0,0,.2),0 10px 14px 1px rgba(0,0,0,.14),0 4px 18px 3px rgba(0,0,0,.12)!important;
 }
